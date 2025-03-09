@@ -1,0 +1,113 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.image-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Image styles */
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: none; /* Hidden until the image loads */
+}
+
+#loading {
+    display: none;
+    margin: 20px auto;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+/* Back button */
+.back-button {
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #e53935;
+}
+
+/* Loading animation effect */
+.loading {
+    animation: fadeInOut 1.5s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

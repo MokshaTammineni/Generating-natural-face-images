@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Natural Face Image</h1>
+        <p>Your imagination is just one text away</p>
+
+        <label for="input">Enter a description:</label>
+        <input type="text" id="input" placeholder="Type here...">
+
+        <button id="btn">Generate Image</button>
+
+        <!-- Loading animation -->
+        <div id="loading" class="loading">Loading...</div>
+
+        <!-- The image will be displayed here -->
+        <div class="image-container">
+            <img id="image" class="image">
+        </div>
+
+        <!-- Back button to go to homepage -->
+        <button id="back-btn" class="back-button">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
